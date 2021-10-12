@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Info</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+     :root {
+        --color1: #708ed2;
+        --color2: #272532;
+        --color3: #ebe5e2;
+        --color4: #83cfdf;
+        --color5: #13688c;
+        --color6: #373b69;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    body {
+        background: var(--color6) !important;
+    }
+    
+    nav {
+        background: #6065ac;
+    }
+    
+    nav a {
+        color: #ebe5e2;
+        font-size: 2.5rem !important;
+    }
+    
+    .movie-card {
+        padding: 10px;
+    }
+    
+    .movie-description {
+        background: var(--color5);
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    
+    .movie-title {
+        color: var(--color3);
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .movie-vote {
+        background: var(--color2);
+        color: orange;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    .movie-img {
+        border-radius: 0.5rem 0.5rem 0 0;
+        overflow: hidden;
+        max-height: 100% !important;
+    }
+</style>
+
+<body>
+    <nav class="fixed-top d-flex justify-content-center navbar p-2">
+        <a href="index.html" class="p-0 navbar-brand d-none d-lg-block">Movie Finder</a
+        >
+        <form id="search-form" class="form-inline">
+          <input
+            id="search"
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </nav>
+      <section>
+        <div class="container-fluid mt-5 p-5">
+          <div id="movie-content" class="row d-flex justify-content-center">
+            <!-- javascript will come here -->
+          </div>
+        </div>
+      </section>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a id="previous" class="btn page-link" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item">
+            <a id="next" class="btn page-link">Next</a>
+        </li>
+        </ul>
+    </nav>
+    <script src="main.js"></script>
+</body>
+
+</html>
